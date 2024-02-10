@@ -1,0 +1,123 @@
+body {
+    margin: 20pt;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    background-color: #f7f8f9;
+    /* background-color: black; */
+    color: #000;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20pt;
+    margin: 20pt 0;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+.hamburger {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.open .hamburger {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.open .hamburger:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.open .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .hamburger:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.content {
+    text-align: left;
+    padding: 50px 20px;
+    margin-bottom: 20pt;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2.3em;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.marcoblog img {
+    border: 2.3px solid #230667;
+    border-radius: 4px;
+    height: 36px;
+}
+#latest-post-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    max-width: 70em;
+    
+}
+
+#latest-post-preview > div {
+    padding: 20pt;
+    border: 2px solid;
+    flex: 1;
+    margin: 10pt;
+    background-color: #fff;
+}
+@media screen and (max-width: 70em) {
+    #latest-post-preview {
+        flex-direction: column; /* Change to column layout when screen width is less than 70em */
+    }
+}
