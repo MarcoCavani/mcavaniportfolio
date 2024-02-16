@@ -51,7 +51,7 @@
    
        
     <script>
-fetch('https://marcoweb.org/cms/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-timeline')
+fetch('https://marcoweb.org/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-timeline')
     .then(response => response.json())
     .then(data => {
         const post = data[0]; // Assuming only one post is returned
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-fetch('https://marcoweb.org/cms/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-timeline')
+fetch('https://marcoweb.org/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-timeline')
     .then(response => response.json())
     .then(data => {
         const post = data[0]; // Assuming only one post is returned
@@ -105,7 +105,7 @@ fetch('https://marcoweb.org/cms/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-time
 
 
 
-fetch('https://marcoweb.org/cms/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-timeline')
+fetch('https://marcoweb.org/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-timeline')
     .then(response => response.json())
     .then(data => {
         const post = data[0]; // Assuming only one post is returned
@@ -121,7 +121,7 @@ fetch('https://marcoweb.org/cms/wp-json/wp/v2/posts?slug=boss-of-the-soc-v3-time
     
 document.addEventListener('DOMContentLoaded', function() {
     // Fetch last 3 post previews
-    fetch('https://marcoweb.org/cms/wp-json/wp/v2/posts?_embed&per_page=3')
+    fetch('https://marcoweb.org/wp-json/wp/v2/posts?_embed&per_page=3')
         .then(response => response.json())
         .then(data => {
             data.forEach(post => {
